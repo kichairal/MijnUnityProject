@@ -1,0 +1,9 @@
+sketch.js 
+function setup() {
+  createCanvas(1000, 1000);
+}
+function draw(rectangle) {
+  background(220, 220, 220);
+fill(213, 189, 222);
+
+}

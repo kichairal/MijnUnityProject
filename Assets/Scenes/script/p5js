@@ -1,0 +1,29 @@
+// Set variables to draw the racetrack.
+let startLine = 30;
+let finishLine = 400;
+function setup() {
+// 500x500 canvas
+  createCanvas(500, 500); 
+  // Draw the emoji at the current (x, y) position
+  text("🌸", 100, 250);
+  text("🌸", x, y);
+    // Reset position if it goes off the right side
+  if (x > width) {
+    x = 0;
+  }
+    // Update the position
+  x = x + speed;
+  
+}
+
+function draw() {
+//set background color
+  background(121, 96, 76);
+  // Draw the start and finish lines.
+  noStroke();
+  fill(0);
+  rect(startLine, 0, 5, height);
+  fill(0, 255, 0);
+  rect(finishLine, 0, 20, height);
+  textSize(75)
+}
